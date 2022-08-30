@@ -149,6 +149,7 @@
 		"webgl_materials_normalmap",
 		"webgl_materials_normalmap_object_space",
 		"webgl_materials_physical_clearcoat",
+		"webgl_materials_nelson_physical_clearcoat",
 		"webgl_materials_physical_reflectivity",
 		"webgl_materials_physical_transmission",
 		"webgl_materials_standard",

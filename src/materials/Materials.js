@@ -5,6 +5,7 @@ import { ShaderMaterial } from './ShaderMaterial.js';
 import { PointsMaterial } from './PointsMaterial.js';
 import { MeshPhysicalMaterial } from './MeshPhysicalMaterial.js';
 import { MeshStandardMaterial } from './MeshStandardMaterial.js';
+import { MeshNelsonPhysicalMaterial } from './MeshNelsonPhysicalMaterial.js';
 import { MeshPhongMaterial } from './MeshPhongMaterial.js';
 import { MeshToonMaterial } from './MeshToonMaterial.js';
 import { MeshNormalMaterial } from './MeshNormalMaterial.js';
@@ -25,6 +26,7 @@ export {
 	PointsMaterial,
 	MeshPhysicalMaterial,
 	MeshStandardMaterial,
+	MeshNelsonPhysicalMaterial,
 	MeshPhongMaterial,
 	MeshToonMaterial,
 	MeshNormalMaterial,

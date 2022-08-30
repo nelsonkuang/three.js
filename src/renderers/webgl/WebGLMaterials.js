@@ -44,7 +44,7 @@ function WebGLMaterials( renderer, properties ) {
 			refreshUniformsCommon( uniforms, material );
 			refreshUniformsStandard( uniforms, material );
 
-			if ( material.isMeshPhysicalMaterial ) {
+			if ( material.isMeshPhysicalMaterial || material.isMeshNelsonPhysicalMaterial ) {
 
 				refreshUniformsPhysical( uniforms, material, transmissionRenderTarget );
 

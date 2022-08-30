@@ -6,6 +6,13 @@ export default /* glsl */`
 
 #endif
 
+#ifdef USE_NORMALMAP_FOR_MAT
+
+uniform sampler2D normalMapForMat;
+uniform vec2 normalScaleForMat;
+
+#endif
+
 #ifdef OBJECTSPACE_NORMALMAP
 
 	uniform mat3 normalMatrix;

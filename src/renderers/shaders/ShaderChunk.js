@@ -117,6 +117,7 @@ import * as meshmatcap from './ShaderLib/meshmatcap.glsl.js';
 import * as meshnormal from './ShaderLib/meshnormal.glsl.js';
 import * as meshphong from './ShaderLib/meshphong.glsl.js';
 import * as meshphysical from './ShaderLib/meshphysical.glsl.js';
+import * as meshnelsonphysical from './ShaderLib/meshnelsonphysical.glsl.js';
 import * as meshtoon from './ShaderLib/meshtoon.glsl.js';
 import * as points from './ShaderLib/points.glsl.js';
 import * as shadow from './ShaderLib/shadow.glsl.js';
@@ -254,6 +255,8 @@ export const ShaderChunk = {
 	meshphong_frag: meshphong.fragment,
 	meshphysical_vert: meshphysical.vertex,
 	meshphysical_frag: meshphysical.fragment,
+	meshnelsonphysical_vert: meshnelsonphysical.vertex,
+	meshnelsonphysical_frag: meshnelsonphysical.frag,
 	meshtoon_vert: meshtoon.vertex,
 	meshtoon_frag: meshtoon.fragment,
 	points_vert: points.vertex,
