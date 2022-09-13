@@ -1,4 +1,4 @@
-import { TangentSpaceNormalMap } from '../constants.js';
+// import { TangentSpaceNormalMap } from '../constants.js';
 import { Vector2 } from '../math/Vector2.js';
 import { MeshStandardMaterial } from './MeshStandardMaterial.js';
 import { Color } from '../math/Color.js';
@@ -29,7 +29,7 @@ class MeshNelsonPhysicalMaterial extends MeshStandardMaterial {
 		this.clearcoatNormalMap = null;
 
 		this.normalMapForMat = null;
-		this.normalMapTypeForMat = TangentSpaceNormalMap;
+		// this.normalMapTypeForMat = TangentSpaceNormalMap;
 		this.normalScaleForMat = new Vector2( 1, 1 );
 
 		this.ior = 1.5;
