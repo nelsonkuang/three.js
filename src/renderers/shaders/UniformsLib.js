@@ -72,6 +72,13 @@ const UniformsLib = {
 
 	},
 
+	normalmapformat: {
+
+		normalMapForMat: { value: null },
+		normalScaleForMat: { value: /*@__PURE__*/ new Vector2( 1, 1 ) }
+
+	},
+
 	displacementmap: {
 
 		displacementMap: { value: null },

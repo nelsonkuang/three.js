@@ -157,6 +157,14 @@ function WebGLMaterials( renderer, properties ) {
 
 		}
 
+		if ( material.normalMapForMat ) {
+
+			uniforms.normalMapForMat.value = material.normalMapForMat;
+			uniforms.normalScaleForMat.value.copy( material.normalScaleForMat );
+			if ( material.side === BackSide ) uniforms.normalScaleForMat.value.negate();
+
+		}
+
 		if ( material.specularMap ) {
 
 			uniforms.specularMap.value = material.specularMap;

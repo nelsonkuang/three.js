@@ -256,7 +256,7 @@ export const ShaderChunk = {
 	meshphysical_vert: meshphysical.vertex,
 	meshphysical_frag: meshphysical.fragment,
 	meshnelsonphysical_vert: meshnelsonphysical.vertex,
-	meshnelsonphysical_frag: meshnelsonphysical.frag,
+	meshnelsonphysical_frag: meshnelsonphysical.fragment,
 	meshtoon_vert: meshtoon.vertex,
 	meshtoon_frag: meshtoon.fragment,
 	points_vert: points.vertex,

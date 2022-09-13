@@ -327,5 +327,48 @@ ShaderLib.physical = {
 
 };
 
+ShaderLib.nelsonPhysical = {
+
+	uniforms: /*@__PURE__*/ mergeUniforms( [
+		ShaderLib.standard.uniforms,
+		{
+			clearcoat: { value: 0 },
+			clearcoatMap: { value: null },
+			clearcoatRoughness: { value: 0 },
+			clearcoatRoughnessMap: { value: null },
+			clearcoatNormalScale: { value: /*@__PURE__*/ new Vector2( 1, 1 ) },
+			clearcoatNormalMap: { value: null },
+			iridescence: { value: 0 },
+			iridescenceMap: { value: null },
+			iridescenceIOR: { value: 1.3 },
+			iridescenceThicknessMinimum: { value: 100 },
+			iridescenceThicknessMaximum: { value: 400 },
+			iridescenceThicknessMap: { value: null },
+			sheen: { value: 0 },
+			sheenColor: { value: /*@__PURE__*/ new Color( 0x000000 ) },
+			sheenColorMap: { value: null },
+			sheenRoughness: { value: 1 },
+			sheenRoughnessMap: { value: null },
+			transmission: { value: 0 },
+			transmissionMap: { value: null },
+			transmissionSamplerSize: { value: /*@__PURE__*/ new Vector2() },
+			transmissionSamplerMap: { value: null },
+			thickness: { value: 0 },
+			thicknessMap: { value: null },
+			attenuationDistance: { value: 0 },
+			attenuationColor: { value: /*@__PURE__*/ new Color( 0x000000 ) },
+			specularIntensity: { value: 1 },
+			specularIntensityMap: { value: null },
+			specularColor: { value: /*@__PURE__*/ new Color( 1, 1, 1 ) },
+			specularColorMap: { value: null },
+		},
+		UniformsLib.normalmapformat,
+	] ),
+
+	vertexShader: ShaderChunk.meshnelsonphysical_vert,
+	fragmentShader: ShaderChunk.meshnelsonphysical_frag
+
+};
+
 
 export { ShaderLib };

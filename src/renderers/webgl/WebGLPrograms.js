@@ -26,7 +26,7 @@ function WebGLPrograms( renderer, cubemaps, cubeuvmaps, extensions, capabilities
 		MeshToonMaterial: 'toon',
 		MeshStandardMaterial: 'physical',
 		MeshPhysicalMaterial: 'physical',
-		MeshNelsonPhysicalMaterial: 'physical',
+		MeshNelsonPhysicalMaterial: 'nelsonPhysical', // nelsonPhysical
 		MeshMatcapMaterial: 'matcap',
 		LineBasicMaterial: 'basic',
 		LineDashedMaterial: 'dashed',
@@ -136,6 +136,7 @@ function WebGLPrograms( renderer, cubemaps, cubeuvmaps, extensions, capabilities
 			emissiveMap: !! material.emissiveMap,
 			bumpMap: !! material.bumpMap,
 			normalMap: !! material.normalMap,
+			normalMapForMat: !! material.normalMapForMat,
 			objectSpaceNormalMap: material.normalMapType === ObjectSpaceNormalMap,
 			tangentSpaceNormalMap: material.normalMapType === TangentSpaceNormalMap,
 
@@ -387,6 +388,8 @@ function WebGLPrograms( renderer, cubemaps, cubeuvmaps, extensions, capabilities
 			_programLayers.enable( 31 );
 		if ( parameters.uvsVertexOnly )
 			_programLayers.enable( 32 );
+		if ( parameters.normalMapForMat )
+		  _programLayers.enable( 33 );
 
 		array.push( _programLayers.mask );
 		_programLayers.disableAll();
